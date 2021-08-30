@@ -17,7 +17,7 @@ body{
     position: absolute;
     top: 0;
     z-index: 1;
-    transition: 1s;
+    transition: all 1s;
     display: none;
 }
 .container{
@@ -91,4 +91,9 @@ tbody tr:nth-child(odd){
 .modal h1{
     font-weight: 500;
     margin-bottom: 1rem;
+}
+.modal__link{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: blue;
 }

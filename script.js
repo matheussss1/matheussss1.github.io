@@ -55,7 +55,7 @@ const list_posts = () => {
             const status = e.status == 'R'? 'Rascunho' : 'Postado';
             document.querySelector('.post').innerHTML += 
                 `<tr>
-                    <td><a id=post#${e.slug}>${e.titulo}</a></td>
+                    <td><a id=post#${e.slug} class="modal__link">${e.titulo}</a></td>
                     <td>${e.autor['first_name']}</td>
                     <td>${e.criado}</td>
                     <td>${e.atualizado}</td>
