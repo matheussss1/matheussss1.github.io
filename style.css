@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+.overlay {
+    background-color: rgba(0,0,0,.6);   
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: 1s;
+    display: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: slategray;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+header h1 {
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.posts{
+    width: 100%;
+}
+.posts table{
+    margin: 0 auto;
+    width: 100%;
+    font-size: 20px;
+    padding: 2rem;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: skyblue;
+}
+
+th,td{
+    text-align: center;
+    padding: .5rem 0;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(173, 232, 255);
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(207, 242, 255);
+}
+.modal {
+    display: none;
+
+    min-width: 75%;
+    min-height: 500px;
+    max-width: 90%px;
+    max-height: 600px;
+    overflow: auto;
+
+    background-color: whitesmoke;
+    font-size: 1.4rem;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 2rem;
+    z-index: 2;
+}
+.modal h1{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
